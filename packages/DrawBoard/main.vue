@@ -411,16 +411,16 @@ export default {
         // format point range when the point exceeds the image boundary
         graphic.points.forEach((point,index)=>{
           graphic.points[index] = formatPointRange(
-            point,
-            imagePosX,
-            imagePosY,
-            viewWidth,
-            viewHeight,
-            imageXOffset,
-            imageYOffset,
-            imageScale,
-            scale,
-            degree
+            this.point,
+            this.imagePosX,
+            this.imagePosY,
+            this.viewWidth,
+            this.viewHeight,
+            this.imageXOffset,
+            this.imageYOffset,
+            this.imageScale,
+            this.scale,
+            this.degree
           );
         })
         // computedCenter

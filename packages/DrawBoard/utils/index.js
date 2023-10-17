@@ -164,13 +164,13 @@ export function formatPointRange(point,imagePosX,imagePosY,viewWidth,viewHeight,
   )
   if (tempPoint.x < 0) {
     tempPoint.x = 0
-  }else if(tempPoint.x > imageWidth){
-    tempPoint.x = imageWidth
+  }else if(tempPoint.x > viewWidth){
+    tempPoint.x = viewWidth
   }
   if (tempPoint.y < 0){
     tempPoint.x = 0
-  }else if(tempPoint.y > imageHeight){
-    tempPoint.y = imageHeight
+  }else if(tempPoint.y > viewHeight){
+    tempPoint.y = viewHeight
   }
   let newPoint = imageToCanvas(
     tempPoint.x,
